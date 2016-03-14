@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="LottoApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LottoApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="627" Margin="70,83,0,0" VerticalAlignment="Top" Width="1007">
+            <StackPanel HorizontalAlignment="Left" Height="100" Margin="46,73,0,0" VerticalAlignment="Top" Width="586" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Number of draws" VerticalAlignment="Top" FontSize="26.667"/>
+                <TextBox x:Name="maaraTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="103" Padding="600" Height="43" VerticalAlignment="Top"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="102" Margin="46,173,0,0" VerticalAlignment="Top" Width="409" Orientation="Horizontal">
+                <Button x:Name="drawButton" Content="Draw" HorizontalAlignment="Stretch" VerticalAlignment="Center" Click="drawButton_Click"/>
+                <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="217" Margin="46,280,0,0" VerticalAlignment="Top" Width="499">
+                <TextBlock x:Name="textBlockRandom" TextWrapping="Wrap" Text="Random numbers:" FontSize="21.333"/>
+                <ScrollViewer Height="100" >
+                    <TextBox x:Name="VastausLottoriviTextBox" TextWrapping="Wrap" Text=""/>
+
+                </ScrollViewer>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
